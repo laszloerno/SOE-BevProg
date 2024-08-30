@@ -4,4 +4,4 @@ A githubon óráról órára felkerülnek az órán elhangzott tartalmak minden 
 
 ## 1. óra - HTML alapok
 
-Az összefoglaló a [`HTML.MD`](html.md) fileban található
+Az összefoglaló a [`HTML.MD`](HTML.md) fileban található
