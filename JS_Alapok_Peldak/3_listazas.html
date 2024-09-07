@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listázzunk</title>
+</head>
+<body>
+    <input id="adat">
+    <button onclick="listaz2()">Add hozzá</button>
+    <ul id="lista">Az én listám:</ul>
+</body>
+<script>
+    function listaz() {
+        let adat = document.getElementById("adat").value
+        let lista = document.getElementById("lista")
+        let elem = document.createElement("li")
+        elem.innerText = adat
+        lista.appendChild(elem)
+    }
+    function listaz2() {
+        let adat = document.getElementById("adat").value
+        let lista = document.getElementById("lista")
+        lista.innerHTML += `<li>${adat}</li>`
+    
+    
+    }
+</script>
+</html>

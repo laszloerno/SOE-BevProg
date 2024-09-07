@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BE-KI</title>
+
+</head>
+<body>
+    <input id = "be">
+    <button onclick="beolvas()">Írd ki</button>
+    <div>
+        <span id = "ki">KI</span>
+    </div>
+
+</body>
+
+<script>
+    function beolvas() {
+        let be = document.getElementById("be").value
+        document.getElementById("ki").innerText = be
+    }
+</script>
+</html>
