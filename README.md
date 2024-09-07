@@ -9,3 +9,8 @@ Az összefoglaló a [`HTML.MD`](HTML.md) fileban található
 ## 2. óra CSS alapok
 
 Az összefoglaló a [`CSS.MD`](CSS.md) fileban található
+
+## 3. óra JS alapok
+
+Az összefoglaló a [`JS.MD`](JS.md) fileban található
+
