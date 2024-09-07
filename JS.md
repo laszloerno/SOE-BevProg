@@ -1,5 +1,8 @@
 # Bevezetés a programozásba - JS alapok
 
+[W3Schools - JS Alapok ](https://www.w3schools.com/js/default.asp)
+
+
 ### Változó létrehozása
 
 ```js
