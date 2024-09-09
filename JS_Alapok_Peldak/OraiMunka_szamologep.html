@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+    <script>
+        function osszead() {
+            let szam1 = parseInt(document.getElementById("a").value)
+            let szam2 = parseInt(document.getElementById("b").value)
+            if (!Number.isInteger(szam1) || !Number.isInteger(szam2) ) {
+                alert("valamelyik szám nem szám!")
+                return
+            }
+            /*
+            if (!Number.isInteger(szam2)) {
+                alert("Az második szám nem szám!")
+                return
+            }
+            */
+            let eredmeny = szam1 + szam2
+
+
+            //alert(eredmeny)
+            document.getElementById("eredmeny").innerHTML = eredmeny
+
+        }
+        function kivonas() {
+            let szam1 = document.getElementById("a").value
+            let szam2 = document.getElementById("b").value
+            let eredmeny = parseInt(szam1) - parseInt(szam2)
+            //alert(eredmeny)
+            document.getElementById("eredmeny").innerHTML = eredmeny
+
+        }
+
+
+    </script>
+</head>
+<body>
+      
+    Szám 1:<input id="a"> Szám 2: <input id="b">
+        <button onclick="osszead()">Összeadás</button>
+        <button onclick="kivonas()">Kivonás</button>
+        =<span id="eredmeny">EREDMENY </span>
+    
+</body>
+</html>
