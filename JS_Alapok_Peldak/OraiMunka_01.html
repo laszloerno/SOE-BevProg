@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Köszönés</title>
+    <script>
+        function koszones() {
+            let nev = document.getElementById("nev").value
+           // alert(`Szia ${nev}!`)
+            document.getElementById("nev_ki").innerHTML = nev
+        }
+    </script>
+</head>
+<body>
+    <p>Név:</p> <input type="text" id="nev">
+    <br />
+    <button onclick="koszones()" >    Köszönj nekem</button>
+    <div>
+        <p>Szia <span id="nev_ki">[név]</span>, hogy vagy?</p>
+    </div>
+</body>
+</html>
