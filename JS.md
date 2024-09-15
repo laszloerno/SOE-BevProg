@@ -153,6 +153,23 @@ Ha hozzáfűzni szeretnénk a kiírt szöveghez, nem felülírni, akkor `=` hely
     </body>
 </html>
 ```
+### HTML elemek elérése JS-ből
 
+``` html
+<script>
+    // ebben az esetben nem az elem értékét kapjuk hanem a teljes vezérlő elemet
+    let lista = document.getElementById("puttony_tartalom")
+
+    // ha hozzá akarunk fűzni elemeket akkor megtehetjük innerHTML segítségével :
+    lista.innerHTML += `<li>${adat}</li>` 
+
+    //vagy createElement segítségével
+    let lista = document.getElementById("lista")
+    let elem = document.createElement("li")
+    elem.innerText = adat
+    lista.appendChild(elem)
+
+</script>
+```
 
 
