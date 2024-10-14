@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pénzszámolás</title>
+    <script src="penz.js"></script>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Címlet</th>
+            <th>darabszám</th>
+            <th>összeg</th>
+        </tr>
+        <tr>
+            <td>5 Ft </td>
+            <td><input id="otft" oninput="otFtSzamol()"></td>
+            <td>  <span id="otft_sum">0</span>   Ft  </td>
+        </tr>
+        <tr>
+            <td>10 Ft </td>
+            <td><input id="tizft" oninput="tizFtSzamol()" ></td>
+            <td>  <span id="tizft_sum">0</span>   Ft  </td>
+        </tr>
+
+    </table>
+    <div>
+        <p>A kasszában összesen <b id="vegosszeg">0</b> Ft van</p>
+    </div>
+
+</body>
+
+</html>
