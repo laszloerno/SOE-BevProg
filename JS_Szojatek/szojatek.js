@@ -53,3 +53,22 @@ const szavak = [
             "zokni", "cipő", "csizma", "papucs", "öv", "nyakkendő", "karóra", "gyűrű", "nyaklánc", "fülbevaló"
                      
 ];
+
+function leghosszabbSzojatek(kezdoSzo, szavak) {
+    let szojatek = [kezdoSzo];
+    let aktualisSzo = kezdoSzo;
+
+    while (true) {
+        let utolsoKarakter = aktualisSzo.slice(-1);
+        let kovetkezoSzoIndex = szavak.findIndex(szo => szo[0] === utolsoKarakter);
+
+        if (kovetkezoSzoIndex === -1) {
+            break; // Ha nincs több megfelelő szó, állj le
+        }
+
+        aktualisSzo = szavak.splice(kovetkezoSzoIndex, 1)[0];
+        szojatek.push(aktualisSzo);
+    }
+
+    return szojatek;
+}
