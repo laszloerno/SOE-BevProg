@@ -7,7 +7,7 @@ A gyerekekről listát készít oly módon, hogy ki milyen mikulás csokit szere
 - tej- vagy étcsokoládés mikulás
 
 ## 1.feladat
-A gyerekeket tegyük be egy változóba amit az oldal végén kíírunk két liistába annak megfelelően, hogy ki milyen csokit szeret Tejcsokis és étcsokis lista készüljön a képernyőre. 
+A gyerekeket tegyük be egy változóba amit az oldal végén kiírunk két liistába annak megfelelően, hogy ki milyen csokit szeret tejcsokis és étcsokis lista készüljön a képernyőre. 
 (Ezt megoldhatod akár két gomb segítségével)
 
 ## 2. feladat 
