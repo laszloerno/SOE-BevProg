@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZH2</title>
+    <script src="ZH2.js"></script>
+  </head>
+  <body>
+    <!-- 
+    
+    Egy cimkével (label) és egy input mezővel (input) kérjük be a gyerek nevét.
+    A kettőt összeköti a for attribútum, amelynek értéke megegyezik az input mező id attribútumával. (nev)
+    Azt hogy milyen csokit szeret egy select elem segítségével kérjük be. 
+    A select elemnek legyen két option eleme, az egyiknek a value attribútuma legyen tej, a szövege: Tej, a másiknak a value attribútuma legyen ét, a szövege: Ét
+    
+    -->
+    <div>
+      <label for="nev">Gyerek neve:</label>
+      <input type="text" id="nev" name="nev" />
+      <label for="csoki">Milyen csokit kér:</label>
+      <select id="csoki" name="csoki">
+        <option value="tej">Tej</option>
+        <option value="et">Ét</option>
+      </select>
+    </div>
+    <!--
+    a gomb segítségével rögzítjük a gyerekek adatait, hogy milyen csokit kérnek
+    -->
+    <div>
+      <button onclick="rogzit()">Rögzítés</button>
+    </div>
+
+    <!--
+    Ide teszünk egy helyet ahová ki tudjuk írni a feladatokat
+    -->
+    <div>
+      <h4>Gyerekek választásai:</h4>
+
+      <!-- A tejcsokis listát "tejcsoki" néven nevezzük el, mert ebbe fogjuk belerakni azokat a gyerekeket akik Tejcsokit kértek-->
+      <p>Tejcsokit kérnek</p>
+      <ul id="tejcsoki"></ul>
+
+      <!-- A étcsokis listát "etcsoki" néven nevezzük el, mert ebbe fogjuk belerakni azokat a gyerekeket akik Étcsokit kértek-->
+      <p>Étcsokit kérnek</p>
+      <ul id="etcsoki"></ul>
+
+      <!-- Csinálunk egy Statisztika részt is ide a többi számolás eredményét írjuk ki-->
+      <div id="statisztika"></div>
+    </div>
+  </body>
+</html>
